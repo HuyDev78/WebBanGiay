@@ -6,7 +6,9 @@ const Product = ({ Url, Name, Old, New }) => {
     const { addToCart } = useContext(CartContext);
 
     const handleAddToCart = () => {
+        const id = Name + New;
         addToCart({
+            id,
             name: Name,
             price: parseFloat(New.replace('.', '').replace('Đ', '')),
             image: Url
