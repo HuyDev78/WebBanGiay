@@ -1,13 +1,7 @@
 import '../index.css'
 import logo from '../assets/logo.jpg'
-import { useEffect } from 'react'
-import axios from 'axios'
 const Footer = () => {
-    useEffect(() => {
-        axios.get("https://jsonplaceholder.typicode.com/users").then(res => {
-            console.log("Check dât :", res.data);
-        })
-    }, [])
+
     return (
         <>
             <div className=' text-white grid grid-cols-4  bg-[rgb(28,27,27)] p-5 mt-10'>

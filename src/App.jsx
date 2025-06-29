@@ -13,6 +13,8 @@ import CartPage from './IndexPage/CartPage'
 import BuyNow from './IndexPage/BuyNow'
 import CheckoutPage from './IndexPage/Checkout'
 import OrderPage from './IndexPage/Order'
+import Register from './IndexPage/Register'
+
 function HomePage() {
 
 
@@ -53,6 +55,7 @@ function App() {
       <Route path="/HomePage" element={<HomePage />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/buynow" element={<BuyNow />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/checkout" element={<CheckoutPage />} />
       <Route path="/order" element={<OrderPage />} />
     </Routes>
